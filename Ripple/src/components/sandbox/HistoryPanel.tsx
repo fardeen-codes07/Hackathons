@@ -1,0 +1,6 @@
+import { formatNumber } from "@/lib/format"
+import type { ScenarioHistory } from "@/types"
+
+export function HistoryPanel({ history, onReplay }: { history: ScenarioHistory[]; onReplay: (history: ScenarioHistory) => void }) {
+  return <section className="history-panel panel" id="history"><div className="panel-header"><div className="panel-title"><span className="panel-code">08</span><h2>Scenario history</h2></div><span className="status-label">LOCAL SESSION</span></div><div className="history-body">{history.length === 0 ? <div className="empty-state"><strong>No completed scenarios yet.</strong><span>Run a scenario to create a replayable local record.</span></div> : <div className="history-list">{history.map((item) => <button type="button" className="history-item" key={item.id} onClick={() => onReplay(item)}><span className="history-time">{item.completedAt}</span><span className="history-name">{item.scenario.label ?? item.scenario.targetLabel ?? item.scenario.buildingId}</span><span className="history-result">Stability {item.stabilityBefore} → {item.stabilityAfter} / {formatNumber(item.affectedStudents)} affected</span><span className="history-action">Replay →</span></button>)}</div>}</div></section>
+}

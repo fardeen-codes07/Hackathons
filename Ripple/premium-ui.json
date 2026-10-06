@@ -1,0 +1,22 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["src"],
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Select/Listbox", "Scrollbar"],
+  "ownership": {
+    "Select/Listbox": "native",
+    "Scrollbar": "global stylesheet"
+  },
+  "requiredCommands": ["lint", "typecheck", "unit", "e2e", "build"],
+  "commands": {
+    "lint": "npm run lint",
+    "typecheck": "npm run typecheck",
+    "unit": "npm test",
+    "e2e": "npm run test:e2e",
+    "build": "npm run build"
+  },
+  "evidence": {
+    "goldenPath": "tests/golden-path.spec.ts",
+    "engine": "src/engine/simulationEngine.test.ts"
+  }
+}
