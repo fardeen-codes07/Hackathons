@@ -1,99 +1,53 @@
 # Hackathon Projects
 
-This repository contains the projects I developed during my hackathon experiences.  
-Each project represents a different problem statement, approach, and set of technologies I explored while working under a limited time constraint.
-
-These projects helped me gain practical experience in **problem-solving, rapid development, teamwork, system design, and building working prototypes from an idea.**
+A collection of projects developed during hackathons, focused on cybersecurity and decision intelligence.
 
 ---
 
-# 1. Code Vulnerability Triage System
+## 1. Code Vulnerability Triage System
 
-The **Code Vulnerability Triage System** is a web-based tool designed to analyze source code and identify potential security vulnerabilities.
+**Live Demo:** https://hackathonscodevulnerabilty-nine.vercel.app/
 
-The project focuses on making the initial vulnerability analysis process simpler by performing **client-side code analysis** and applying **heuristic-based detection techniques** to identify suspicious or potentially vulnerable patterns in source code.
+A web-based source code analysis tool designed to identify potential security vulnerabilities through client-side heuristic and AST-based analysis.
 
-###  What It Does
+### Features
 
-- Analyzes source code directly in the browser
-- Identifies potentially vulnerable code patterns
-- Uses heuristic-based rules for vulnerability detection
-- Provides a simple interface for submitting and analyzing code
-- Helps users understand potential security issues in their source code
-
-###  Tech Stack
-
-- HTML
-- CSS
-- JavaScript
-- Esprima
-
-###  Hackathon Focus
-
-The main focus of this project was to build a practical security-oriented solution within the constraints of a hackathon environment.
-
-It provided hands-on experience with **source-code parsing, client-side analysis, vulnerability detection, and rapid web development**.
-
----
-
-# 2. RIPPLE — Decision Intelligence & Scenario Simulation
-
-**RIPPLE** is a local-only decision-intelligence prototype designed to demonstrate how complex systems can be analyzed by simulating the effects of disruptions and comparing possible interventions.
-
-The project begins with a **campus operations** vertical and models how a change in one part of a system can create a chain of effects across other areas.
-
-###  Core Decision Loop
-
-The application demonstrates a simple but powerful decision-making workflow:
-
-**Select a disruption → Simulate the ripple → Compare interventions → Optimize → Explain**
-
-### Key Features
-
-- Campus operations scenario simulation
-- Ripple-effect analysis
-- Intervention comparison
-- Decision optimization
-- Predictive intelligence layer
-- Digital-twin inspired system modeling
-- Explainable simulation results
-- Synthetic local campus data
-- Deterministic simulation engine
+- Source code file upload and analysis
+- Pattern-based vulnerability detection
+- JavaScript AST analysis using Esprima
+- Vulnerability severity classification
+- Security analysis dashboard
+- Client-side processing
 
 ### Tech Stack
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Deterministic simulation engine
-- Locally trained tabular neural network
-
-### Hackathon Focus
-
-The main focus of RIPPLE was to explore **decision intelligence, system simulation, predictive analysis, and digital-twin concepts** in a practical prototype.
-
-The application uses deterministic TypeScript simulation rules, deterministic synthetic local data, and a small locally trained tabular neural network in the predictive layer.
-
-There is **no backend, authentication, persistence, external API, or hosted ML service**. The outputs are representative prototype results and are not intended to represent official operational telemetry.
+HTML, CSS, JavaScript, Esprima
 
 ---
 
-# Hackathon Journey
+## 2. RIPPLE — Decision Intelligence & Scenario Simulation
 
-These projects represent two different hackathon experiences where I worked on turning ideas into functional prototypes within a limited amount of time.
+**Live Demo:** https://hackathons-3wgspw9dp-fardeen-codes07.vercel.app/
 
-From **code security and vulnerability analysis** to **decision intelligence and system simulation**, each project allowed me to explore a different technical problem while improving my ability to design, build, test, and present a working solution.
+RIPPLE is a decision-intelligence platform designed to simulate how changes in campus resources, constraints, and priorities can affect different operational scenarios.
 
-### Code Vulnerability Triage System
-**Focus:** Cybersecurity • Source Code Analysis • Web Development
+### Features
 
-### RIPPLE
-**Focus:** Decision Intelligence • Simulation • Predictive Analysis • System Modeling
+- Scenario simulation
+- Resource and constraint management
+- Ripple-effect visualization
+- Intervention comparison
+- Decision-oriented insights
+- Interactive scenario analysis
+
+### Tech Stack
+
+Next.js, React, TypeScript, Tailwind CSS, React Flow, Recharts
 
 ---
 
-## Built During Hackathons
+## Hackathon Experience
 
-**Learn → Build → Experiment → Solve → Improve**
+These projects were developed as part of hackathon challenges, focusing on building practical software solutions and experimenting with different technologies.
 
+Both projects are deployed and available for public demonstration.
